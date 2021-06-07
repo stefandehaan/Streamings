@@ -18,7 +18,7 @@
       <excludeFolder url="file://$MODULE_DIR$/stream" />
       <excludeFolder url="file://$MODULE_DIR$/stream2" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.9 (Streamings)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">

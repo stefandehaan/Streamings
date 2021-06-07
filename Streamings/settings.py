@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -26,7 +25,6 @@ SECRET_KEY = 'django-insecure-$720$3))n1yo7_=x0v0)3z%lmx-k_#^-o^fo#ur3i@o$+9k$42
 DEBUG = True
 
 ALLOWED_HOSTS = ['192.168.112.103', '127.0.0.1', '0.0.0.0']
-
 
 # Application definition
 
@@ -73,21 +71,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Streamings.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'database': 'streaming',
-            'user': 'stefan',
-            'password': 'stefan',
-            'default-character-set': 'utf-8'
-        },
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'streaming',
+        'USER': 'stefan',
+        'PASSWORD': 'stefan',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
+
 
 #
 # DATABASES = {
@@ -116,7 +113,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
@@ -129,7 +125,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
